@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "RACHEL VTUBER.moc3",
+		"Textures": [
+			"RACHEL VTUBER.4096/texture_00.png"
+		],
+		"Physics": "RACHEL VTUBER.physics3.json",
+		"DisplayInfo": "RACHEL VTUBER.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Yumi_Vtuber_With_Toggles_.moc3",
+		"Textures": [
+			"Yumi_Vtuber_With_Toggles_.4096/texture_00.png"
+		],
+		"Physics": "Yumi_Vtuber_With_Toggles_.physics3.json",
+		"DisplayInfo": "Yumi_Vtuber_With_Toggles_.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}

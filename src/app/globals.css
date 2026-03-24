@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Rachel Arts — Brand Colors */
+  --color-rachel-pink: hsl(335, 90%, 68%);
+  --color-rachel-purple: hsl(270, 75%, 72%);
+  --color-rachel-magenta: hsl(310, 80%, 65%);
+  --color-rachel-dark: hsl(270, 20%, 12%);
+  --color-rachel-glow: hsl(335, 100%, 80%);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Prevent rubber-band overscroll ruining the fixed-canvas illusion */
+    overscroll-behavior: none;
+  }
+
+  body {
+    @apply text-white;
+    background-color: hsl(270, 20%, 8%);
+    /* Prevent momentum scroll bounce on iOS from displacing fixed elements */
+    overscroll-behavior: none;
+  }
+
+  /* Hide scrollbar for cleaner Awwwards look */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* GPU compositing hint — canvases get their own layer */
+  canvas {
+    will-change: transform;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateX(-20%) scale(1.25) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-20%) scale(1.25) translateY(-14px);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .glass-pink {
+    background: rgba(255, 100, 160, 0.08);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 100, 160, 0.2);
+    box-shadow: 0 8px 32px rgba(255, 100, 160, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px currentColor;
+  }
+
+  .text-glow-pink {
+    text-shadow: 0 0 30px hsl(335, 90%, 68%), 0 0 60px hsl(335, 90%, 68%);
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+}

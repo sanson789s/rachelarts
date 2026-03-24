@@ -1,0 +1,57 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "DYLAN MODEL.moc3",
+		"Textures": [
+			"DYLAN MODEL.4096/texture_00.png"
+		],
+		"Physics": "DYLAN MODEL.physics3.json",
+		"DisplayInfo": "DYLAN MODEL.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "OUTFIT 1",
+				"File": "OUTFIT 1.exp3.json"
+			},
+			{
+				"Name": "OUTFIT 2",
+				"File": "OUTFIT 2.exp3.json"
+			},
+			{
+				"Name": "HAPPY",
+				"File": "HAPPY.exp3.json"
+			},
+			{
+				"Name": "CONFUSE",
+				"File": "CONFUSE.exp3.json"
+			},
+			{
+				"Name": "ANGRY",
+				"File": "ANGRY.exp3.json"
+			},
+			{
+				"Name": "LOVE",
+				"File": "LOVE.exp3.json"
+			},
+			{
+				"Name": "CRINGE",
+				"File": "CRINGE.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

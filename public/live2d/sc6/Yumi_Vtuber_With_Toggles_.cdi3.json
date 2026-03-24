@@ -1,0 +1,273 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamUMBRELATOGGLE",
+			"GroupId": "ParamGroup",
+			"Name": "UMBRELA TOGGLE"
+		},
+		{
+			"Id": "ParamBIRDTOGGLE",
+			"GroupId": "ParamGroup",
+			"Name": "BIRD TOGGLE"
+		},
+		{
+			"Id": "ParamBOOKTOGGLE",
+			"GroupId": "ParamGroup",
+			"Name": "BOOK TOGGLE"
+		},
+		{
+			"Id": "ParamMAGICTOGGLE",
+			"GroupId": "ParamGroup",
+			"Name": "MAGIC TOGGLE"
+		},
+		{
+			"Id": "ParamFIREWINGTOGGLE",
+			"GroupId": "ParamGroup",
+			"Name": "FIRE WING TOGGLE"
+		},
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "",
+			"Name": "Angle X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "",
+			"Name": "Angle Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "",
+			"Name": "Angle Z"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "",
+			"Name": "EyeL Open"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "",
+			"Name": "EyeR Open"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "",
+			"Name": "Eyeball X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "",
+			"Name": "Eyeball Y"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "",
+			"Name": "EyeL Smile"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "",
+			"Name": "EyeR Smile"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "",
+			"Name": "BrowL Y"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "",
+			"Name": "BrowR Y"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "",
+			"Name": "BrowL X"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "",
+			"Name": "BrowR X"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "",
+			"Name": "BrowL Angle"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "",
+			"Name": "BrowR Angle"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "",
+			"Name": "BrowL Form"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "",
+			"Name": "BrowR Form"
+		},
+		{
+			"Id": "ParamMouthForm",
+			"GroupId": "",
+			"Name": "Mouth Form"
+		},
+		{
+			"Id": "ParamMouthOpenY",
+			"GroupId": "",
+			"Name": "Mouth Open"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "",
+			"Name": "Cheek"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "",
+			"Name": "Body X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "",
+			"Name": "Body Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "",
+			"Name": "Body Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "",
+			"Name": "Breath"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "",
+			"Name": "Hair Move Front"
+		},
+		{
+			"Id": "ParamHairSide",
+			"GroupId": "",
+			"Name": "Hair Move Side"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "",
+			"Name": "Hair Move Back"
+		},
+		{
+			"Id": "Param_Angle_Rotation",
+			"GroupId": "ParamGroup2",
+			"Name": "[0]UPPER BOW"
+		},
+		{
+			"Id": "Param_Angle_Rotation2",
+			"GroupId": "ParamGroup2",
+			"Name": "[1]UPPER BOW"
+		},
+		{
+			"Id": "Param_Angle_Rotation3",
+			"GroupId": "ParamGroup3",
+			"Name": "[0]LOWER BOW"
+		},
+		{
+			"Id": "Param_Angle_Rotation4",
+			"GroupId": "ParamGroup3",
+			"Name": "[1]LOWER BOW"
+		},
+		{
+			"Id": "Param_Angle_Rotation5",
+			"GroupId": "ParamGroup3",
+			"Name": "[2]LOWER BOW"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroup",
+			"GroupId": "",
+			"Name": "TOGGLE"
+		},
+		{
+			"Id": "ParamGroup2",
+			"GroupId": "",
+			"Name": "UPPER BOW"
+		},
+		{
+			"Id": "ParamGroup3",
+			"GroupId": "",
+			"Name": "LOWER BOW"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "Part",
+			"Name": "Toggle 4"
+		},
+		{
+			"Id": "Part2",
+			"Name": "Toggle 3"
+		},
+		{
+			"Id": "Part3",
+			"Name": "Toggle 2"
+		},
+		{
+			"Id": "Part4",
+			"Name": "Toggle 1"
+		},
+		{
+			"Id": "HEAD",
+			"Name": "HEAD"
+		},
+		{
+			"Id": "TORSO",
+			"Name": "TORSO"
+		},
+		{
+			"Id": "BOTTOM",
+			"Name": "BOTTOM"
+		},
+		{
+			"Id": "Part7",
+			"Name": "Toggle 4"
+		},
+		{
+			"Id": "Part8",
+			"Name": "Toggle 2"
+		},
+		{
+			"Id": "Part9",
+			"Name": "Toggle 1"
+		},
+		{
+			"Id": "Part10",
+			"Name": "Toggle 5"
+		},
+		{
+			"Id": "ARMS",
+			"Name": "ARMS"
+		},
+		{
+			"Id": "Part5",
+			"Name": "New group"
+		},
+		{
+			"Id": "Part6",
+			"Name": "New group"
+		},
+		{
+			"Id": "ArtMesh38_Skinning",
+			"Name": "Layer 19(Skinning)"
+		},
+		{
+			"Id": "ArtMesh39_Skinning",
+			"Name": "Layer 49(Skinning)"
+		}
+	]
+}

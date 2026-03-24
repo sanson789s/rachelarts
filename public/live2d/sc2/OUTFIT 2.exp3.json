@@ -1,0 +1,10 @@
+{
+	"Type": "Live2D Expression",
+	"Parameters": [
+		{
+			"Id": "ParamOUTFIT2",
+			"Value": -0.1,
+			"Blend": "Add"
+		}
+	]
+}
