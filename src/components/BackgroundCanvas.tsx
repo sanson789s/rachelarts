@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import { withBase } from "@/lib/basePath";
 
 export default function BackgroundCanvas() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -91,7 +92,7 @@ export default function BackgroundCanvas() {
         };
         updatePlaneSize();
 
-        textureLoader.load('/images/Background_Art.png', (texture) => {
+        textureLoader.load(withBase('/images/Background_Art.png'), (texture) => {
             texture.colorSpace = THREE.SRGBColorSpace;
             // Skip mipmaps — saves ~33% of texture upload time
             texture.minFilter = THREE.LinearFilter;

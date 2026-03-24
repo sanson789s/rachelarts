@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
 import { useRouter } from "next/navigation";
+import { withBase } from "@/lib/basePath";
 
 // Smooth exponential lerp — feels fluid regardless of frame rate
 const expLerp = (current: number, target: number, factor: number, delta: number) =>
@@ -60,7 +61,7 @@ export default function PortfolioCanvas() {
             const yPos = (Math.random() - 0.5) * 3;
             projectGroup.position.set(xPos, yPos, zPos);
 
-            const tex = textureLoader.load(encodeURI(item.finalColor));
+            const tex = textureLoader.load(encodeURI(withBase(item.finalColor)));
             tex.colorSpace = THREE.SRGBColorSpace;
             tex.minFilter = THREE.LinearFilter;
             tex.generateMipmaps = false; // saves texture upload time

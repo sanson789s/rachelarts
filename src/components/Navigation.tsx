@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Product } from "@/data/products";
 import { supabase } from "@/lib/supabase";
 import Link from "next/link";
+import { withBase } from "@/lib/basePath";
 
 interface NavigationProps {
     activeProduct: Product;
@@ -43,7 +44,7 @@ export default function Navigation({ activeProduct, onOpenContact }: NavigationP
     const handleNavClick = (section: string) => {
         setMenuOpen(false);
         if (section === "Chat Dashboard") {
-            window.location.href = "/chat";
+            window.location.href = withBase("/chat");
             return;
         }
         const scrollHeight = document.body.scrollHeight - window.innerHeight;

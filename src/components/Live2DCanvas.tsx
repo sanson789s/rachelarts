@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { withBase } from "@/lib/basePath";
 
 /**
  * Live2DCanvas - loads the Rachel Live2D model using PixiJS + pixi-live2d-display.
  * On mobile devices, skips the heavy PixiJS init and shows the static JPEG fallback instead.
  */
 export default function Live2DCanvas({ 
-    model3JsonPath = "/live2d/rachel/RACHEL VTUBER.model3.json",
+    model3JsonPath = withBase("/live2d/rachel/RACHEL VTUBER.model3.json"),
     mode = "home"
 }: { 
     model3JsonPath?: string;
@@ -251,7 +252,7 @@ export default function Live2DCanvas({
             {mode === "home" && (
                 <img
                     ref={imageRef}
-                    src="/live2d/rachel/RACHEL VTUBER.jpeg"
+                    src={withBase("/live2d/rachel/RACHEL VTUBER.jpeg")}
                     alt="Rachel"
                     className="absolute w-full h-full object-contain select-none pointer-events-none md:hidden"
                     style={{

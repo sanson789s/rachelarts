@@ -8,6 +8,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { withBase } from "@/lib/basePath";
 
 const Live2DCanvasDynamic = dynamic(() => import("@/components/Live2DCanvas"), {
     ssr: false,
@@ -161,7 +162,7 @@ export default function PortfolioDetailPage() {
 
                                 {item.type === "video" ? (
                                     <video
-                                        src={encodeURI(item.src)}
+                                        src={encodeURI(withBase(item.src))}
                                         autoPlay
                                         loop
                                         muted
